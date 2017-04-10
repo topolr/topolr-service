@@ -1,0 +1,1 @@
+{"desc":"地图","editSetting":"{\"width\":600}","editable":true,"fields":"[]","icon":"assets/icons/2647c89bfeb64296.png","removeable":true,"single":true,"sort":"map","template":"<div class='mapcontainer' data-find=\"container\"><\/div>","type":"map","values":"{}","version":"1.0","view":"page.base.map"}

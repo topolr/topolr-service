@@ -1,0 +1,87 @@
+{
+    "services": [
+        {
+            "name": "mvc",
+            "className": "com.brooder.mvc.mapping.BaseMapping",
+            "options": {
+                "projectHost":"http://localhost:8084/ttsxhome/",
+                "exclude": "jpg,jpeg,png,gif.ico,otf,eot,svg,ttf,woff,js,css",
+                "jdbc": {
+                    "jdbcUrl": "jdbc:mysql://localhost:3306/home2?useUnicode=true&characterEncoding=utf8",
+                    "driverClass": "com.mysql.jdbc.Driver",
+                    "username": "root",
+                    "password": "",
+                    "minPoolSize": "3",
+                    "maxPoolSize": "200"
+                },
+                "controller": "com.ttsx.site.controller",
+                "model": "com.ttsx.site.models",
+                "filter": "com.ttsx.site.filter",
+                "service": "com.ttsx.site.service",
+                "dao": "com.test.dao",
+                "view": {
+                    "jspxPath": "/views",
+                    "encoding": "utf-8",
+                    "locale": "zh_CN",
+                    "suffix": "html",
+                    "package": "com.ttsx.site.views",
+                    "tagPakage": "com.ttsx.site.views.tags",
+                    "methodPakage": "com.ttsx.site.views.method",
+                    "providerPakage": "com.ttsx.site.views.provider"
+                }
+            }
+        },
+        {
+            "name": "contenter",
+            "className": "com.brooder.contenter.Boot",
+            "options": {
+                "projectHost":"http://localhost:8084/ttsxhome/",
+                "tagPakage": "com.ttsx.site.contenter.tags",
+                "methodPakage": "com.ttsx.site.contenter.method",
+                "providerPakage": "com.ttsx.site.contenter.provider",
+                "moduleProviderName":"com.brooder.contenter.module.FileContentModuleProvider",
+                "pageProviderName":"com.brooder.contenter.page.FileContentPageProvider",
+                "exceptionHandlerName":"com.brooder.contenter.template.TemplaterException",
+                "debug":true,
+                "debugHelper":{
+                    "modulePath":"G:\\java\\home\\src\\main\\webapp\\WEB-INF\\contenter\\mapping\\modules",
+                    "moduleObjectPath":"G:\\java\\home\\src\\main\\webapp\\WEB-INF\\contenter\\mapping\\moduleObjects",
+                    "pagePath":"G:\\java\\home\\src\\main\\webapp\\WEB-INF\\contenter\\mapping\\pages",
+                    "iconPath":"G:\\java\\home\\src\\main\\webapp\\assets\\icons",
+                    "resourcePath":"G:\\java\\home\\src\\main\\webapp\\assets\\packets\\page"
+                }
+            }
+        },
+        {
+            "name":"mail",
+            "className":"com.brooder.jmail.JmailBoot",
+            "options":{
+                "username":"hr@bjttsx.com",
+                "password":"zhaopin",
+                "from":"hr@bjttsx.com",
+                "host":"smtp.ym.163.com",
+                "auth":true,
+                "port":25,
+                "ssl":false,
+                "template":{
+                    "viewPath":"/mail",
+                    "encoding": "utf-8",
+                    "locale": "zh_CN",
+                    "suffix": "html",
+                    "package": "com.ttsx.site.views",
+                    "tagPakage": "com.ttsx.site.views.tags",
+                    "methodPakage": "com.ttsx.site.views.method",
+                    "providerPakage": "com.ttsx.site.views.provider"
+                }
+            }
+        },
+        {
+            "name":"question",
+            "className":"com.ttsx.site.question.QuestionBoot",
+            "options":{
+                "sendTo":"hr@bjttsx.com",
+                "path":"C:\\questions\\"
+            }
+        }
+    ]
+}

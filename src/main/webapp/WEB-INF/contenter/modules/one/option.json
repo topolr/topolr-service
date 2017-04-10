@@ -1,0 +1,18 @@
+{
+    "type": "one",
+    "version":"1.0",
+    "single": false,
+    "editable": true,
+    "removeable": true,
+    "desc": "test",
+    "icon": "",
+    "view":"page.base.basepagemodule",
+    "option": "",
+    "sort": "test",
+    "fields": [{
+            "type": "contenter.form.text",
+            "label": "test",
+            "name": "test",
+            "value": "test"
+        }]
+}

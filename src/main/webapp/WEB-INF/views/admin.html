@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Admin</title>
+        <script src="${httpPath}assets/brooder.core.js" type="text/javascript"></script>
+        <script src="${httpPath}assets/packets/admin/override.js" type="text/javascript"></script>
+        <script>
+            $().ready(function(){
+                window.basePath="${httpPath}";
+                $("body").Boot({basePath: "${httpPath}assets/packets/"},"admin.option.root.root");
+            });
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

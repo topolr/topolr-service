@@ -1,0 +1,1 @@
+{"desc":"test","editSetting":"{}","editable":true,"fields":"[{\"type\":\"contenter.form.text\",\"label\":\"test\",\"name\":\"test\",\"value\":\"test\"}]","icon":"assets/icons/ff7ebce8a9254c93.png","removeable":true,"single":false,"sort":"test","template":"<div>TODO write content<\/div>","type":"one","values":"{\"test\":\"test\"}","version":"1.0","view":"page.base.basepagemodule"}

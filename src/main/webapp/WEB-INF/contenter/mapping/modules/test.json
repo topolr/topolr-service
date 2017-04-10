@@ -1,0 +1,1 @@
+{"desc":"test","editSetting":"{\"width\":750}","editable":true,"fields":"[{\"type\":\"contenter.edit.editor\",\"label\":\"网站导航\",\"name\":\"links\",\"value\":\"xxxxxx\"}]","icon":"","removeable":true,"single":true,"sort":"test","template":"<div>${Values.links}<\/div>","type":"test","values":"{\"links\":\"xxxxxx\"}","version":"1.0","view":"page.base.basepagemodule"}
